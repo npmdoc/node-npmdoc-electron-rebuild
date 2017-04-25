@@ -119,51 +119,12 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.electron-rebuild.default">module electron-rebuild.default</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.electron-rebuild.default.default">
-            function <span class="apidocSignatureSpan">electron-rebuild.</span>default
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.electron-rebuild.electron_locater">module electron-rebuild.electron_locater</a><ol>
 
         <li>
 
             <a class="apidocElementLiA" href="#apidoc.element.electron-rebuild.electron_locater.locateElectronPrebuilt">
             function <span class="apidocSignatureSpan">electron-rebuild.electron_locater.</span>locateElectronPrebuilt
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.electron-rebuild.installNodeHeaders">module electron-rebuild.installNodeHeaders</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.electron-rebuild.installNodeHeaders.installNodeHeaders">
-            function <span class="apidocSignatureSpan">electron-rebuild.</span>installNodeHeaders
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.electron-rebuild.preGypFixRun">module electron-rebuild.preGypFixRun</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.electron-rebuild.preGypFixRun.preGypFixRun">
-            function <span class="apidocSignatureSpan">electron-rebuild.</span>preGypFixRun
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -200,32 +161,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.electron-rebuild.rebuild.rebuildNativeModules">
             function <span class="apidocSignatureSpan">electron-rebuild.rebuild.</span>rebuildNativeModules
             <span class="apidocSignatureSpan">(electronVersion, modulePath)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.electron-rebuild.rebuildNativeModules">module electron-rebuild.rebuildNativeModules</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.electron-rebuild.rebuildNativeModules.rebuildNativeModules">
-            function <span class="apidocSignatureSpan">electron-rebuild.</span>rebuildNativeModules
-            <span class="apidocSignatureSpan">(electronVersion, modulePath)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.electron-rebuild.shouldRebuildNativeModules">module electron-rebuild.shouldRebuildNativeModules</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.electron-rebuild.shouldRebuildNativeModules.shouldRebuildNativeModules">
-            function <span class="apidocSignatureSpan">electron-rebuild.</span>shouldRebuildNativeModules
-            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -358,50 +293,6 @@ var rebuildNativeModules = exports.rebuildNativeModules = function rebuildNative
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.electron-rebuild.default" id="apidoc.module.electron-rebuild.default">module electron-rebuild.default</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.electron-rebuild.default.default" id="apidoc.element.electron-rebuild.default.default">
-        function <span class="apidocSignatureSpan">electron-rebuild.</span>default
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function rebuild() {
-  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
-    args[_key] = arguments[_key];
-  }
-
-  var lifecycle = new _events2.default();
-  d('rebuilding with args:', args);
-  var rebuilder = _rebuild.apply(undefined, [lifecycle].concat(args));
-  rebuilder.lifecycle = lifecycle;
-  return rebuilder;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-}();
-
-var rebuild = function rebuild() {
-  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
-    args[_key] = arguments[_key];
-  }
-
-  var lifecycle = new _events2.<span class="apidocCodeKeywordSpan">default</span>();
-  d('rebuilding with args:', args);
-  var rebuilder = _rebuild.apply(undefined, [lifecycle].concat(args));
-  rebuilder.lifecycle = lifecycle;
-  return rebuilder;
-};
-
-var rebuildNativeModules = exports.rebuildNativeModules = function rebuildNativeModules(electronVersion, modulePath) {
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.electron-rebuild.electron_locater" id="apidoc.module.electron-rebuild.electron_locater">module electron-rebuild.electron_locater</a></h1>
 
 
@@ -437,46 +328,6 @@ var rebuildNativeModules = exports.rebuildNativeModules = function rebuildNative
   // Return a path if we found one
   if (foundModule) return electronPath;
   return null;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.electron-rebuild.installNodeHeaders" id="apidoc.module.electron-rebuild.installNodeHeaders">module electron-rebuild.installNodeHeaders</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.electron-rebuild.installNodeHeaders.installNodeHeaders" id="apidoc.element.electron-rebuild.installNodeHeaders.installNodeHeaders">
-        function <span class="apidocSignatureSpan">electron-rebuild.</span>installNodeHeaders
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function installNodeHeaders() {
-  return _promise2.default.resolve();
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.electron-rebuild.preGypFixRun" id="apidoc.module.electron-rebuild.preGypFixRun">module electron-rebuild.preGypFixRun</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.electron-rebuild.preGypFixRun.preGypFixRun" id="apidoc.element.electron-rebuild.preGypFixRun.preGypFixRun">
-        function <span class="apidocSignatureSpan">electron-rebuild.</span>preGypFixRun
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function preGypFixRun() {
-  return _promise2.default.resolve();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -585,59 +436,6 @@ var rebuildNativeModules = exports.rebuildNativeModules = function rebuildNative
   d('rebuilding in:', modulePath);
   console.warn('You are using the old API, please read the new docs and update to the new API');
   return rebuild(modulePath, electronVersion, arch, whichModule.split(','));
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.electron-rebuild.rebuildNativeModules" id="apidoc.module.electron-rebuild.rebuildNativeModules">module electron-rebuild.rebuildNativeModules</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.electron-rebuild.rebuildNativeModules.rebuildNativeModules" id="apidoc.element.electron-rebuild.rebuildNativeModules.rebuildNativeModules">
-        function <span class="apidocSignatureSpan">electron-rebuild.</span>rebuildNativeModules
-        <span class="apidocSignatureSpan">(electronVersion, modulePath)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function rebuildNativeModules(electronVersion, modulePath) {
-  var whichModule = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : '';
-  var headersDir = arguments.length &gt; 3 &amp;&amp; arguments[3] !== undefined ? arguments[3] : null;
-  var arch = arguments.length &gt; 4 &amp;&amp; arguments[4] !== undefined ? arguments[4] : process.arch;
-  var command = arguments[5];
-  var ignoreDevDeps = arguments.length &gt; 6 &amp;&amp; arguments[6] !== undefined ? arguments[6] : false;
-  var ignoreOptDeps = arguments.length &gt; 7 &amp;&amp; arguments[7] !== undefined ? arguments[7] : false;
-  var verbose = arguments.length &gt; 8 &amp;&amp; arguments[8] !== undefined ? arguments[8] : false;
-
-  if (_path2.default.basename(modulePath) === 'node_modules') {
-    modulePath = _path2.default.dirname(modulePath);
-  }
-  d('rebuilding in:', modulePath);
-  console.warn('You are using the old API, please read the new docs and update to the new API');
-  return rebuild(modulePath, electronVersion, arch, whichModule.split(','));
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.electron-rebuild.shouldRebuildNativeModules" id="apidoc.module.electron-rebuild.shouldRebuildNativeModules">module electron-rebuild.shouldRebuildNativeModules</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.electron-rebuild.shouldRebuildNativeModules.shouldRebuildNativeModules" id="apidoc.element.electron-rebuild.shouldRebuildNativeModules.shouldRebuildNativeModules">
-        function <span class="apidocSignatureSpan">electron-rebuild.</span>shouldRebuildNativeModules
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function shouldRebuildNativeModules() {
-  return _promise2.default.resolve(true);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
