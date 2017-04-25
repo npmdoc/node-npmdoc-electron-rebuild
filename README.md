@@ -1,4 +1,7 @@
-# api documentation for  [electron-rebuild (v1.5.7)](https://github.com/electron/electron-rebuild)  [![npm package](https://img.shields.io/npm/v/npmdoc-electron-rebuild.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-electron-rebuild) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-electron-rebuild.svg)](https://travis-ci.org/npmdoc/node-npmdoc-electron-rebuild)
+# npmdoc-electron-rebuild
+
+#### basic api documentation for  [electron-rebuild (v1.5.7)](https://github.com/electron/electron-rebuild)  [![npm package](https://img.shields.io/npm/v/npmdoc-electron-rebuild.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-electron-rebuild) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-electron-rebuild.svg)](https://travis-ci.org/npmdoc/node-npmdoc-electron-rebuild)
+
 #### Electron supporting package to rebuild native node modules against the currently installed electron
 
 [![NPM](https://nodei.co/npm/electron-rebuild.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/electron-rebuild)
